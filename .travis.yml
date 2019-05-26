@@ -9,7 +9,7 @@ branches:
 before_install:
   - pip install --user codecov
 after_success:
-  - bash <(curl -s https://codecov.io/bash -t a8782c5f-763d-434d-bad9-7ee16b6c61b2)
+  - bash <(curl -s https://codecov.io/bash)
   
 script:
   - "mvn cobertura:cobertura"
