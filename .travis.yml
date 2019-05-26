@@ -4,13 +4,13 @@ jdk: oraclejdk8
 #safelist -- ensures only commits to master branch triggers the builds
 branches:
   only:
-  - master
-  
-before_install:
-  - pip install --user codecov
-after_success:
-  - bash <(curl -s https://codecov.io/bash -t d7f841a5-fa8e-4134-9680-854380e94bc0)
+  - master 
   
 script:
   - "mvn cobertura:cobertura"
+  
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+  
+
  
