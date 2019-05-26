@@ -1,7 +1,4 @@
- codecov:
-  token: d7f841a5-fa8e-4134-9680-854380e94bc0
-  
-coverage:
+ coverage:
   precision: 2
   round: down
   range: "70...100"
