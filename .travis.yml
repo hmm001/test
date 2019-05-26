@@ -1,5 +1,7 @@
 language: java
 jdk: oraclejdk8
+env:
+CODECOV_TOKEN="d7f841a5-fa8e-4134-9680-854380e94bc0"
 
 #safelist -- ensures only commits to master branch triggers the builds
 branches:
